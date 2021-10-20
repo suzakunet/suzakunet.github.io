@@ -20,6 +20,7 @@
       }
       function auth(password) {
         const url = hash(password);
+        message(url)
         const xhr = new XMLHttpRequest();
         xhr.open('GET', url);
         xhr.send();
